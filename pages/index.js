@@ -8,12 +8,12 @@ export default function Home() {
 
     <div className={styles.container}>
 
-      <Script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.340/build/spline-viewer.js"></Script>
-
       <Head>
         <title>Tiny Hippos F.C.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.340/build/spline-viewer.js"></Script>
 
       <div className={styles.splineviewer}>
         <spline-viewer loading-anim url="https://prod.spline.design/2VBfQlbkZu9po01U/scene.splinecode"></spline-viewer>
