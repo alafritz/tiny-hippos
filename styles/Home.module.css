@@ -36,6 +36,7 @@
 .splineviewer {
   height: 87vh;
   width: 100vw;
+  background: linear-gradient(180deg, #A5C9FB 0%, rgba(165, 201, 251, 0) 100%);
 }
 
 
