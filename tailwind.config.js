@@ -16,6 +16,7 @@ module.exports = {
         foreground: "var(--colors-foreground)",
         ["text-primary"]: "var(--colors-text-primary)",
         ["text-secondary"]: "var(--colors-text-secondary)",
+        ["green"]: "var(--colors-green)",
       },
     },
   },

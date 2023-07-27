@@ -9,6 +9,7 @@ import {
 import { Heading, Text } from "@components/common";
 import { SplineRotation } from "@components/SplineRotation";
 import Image from "next/image";
+import { Content } from "next/font/google";
 export function New() {
   return (
     <>
@@ -43,7 +44,7 @@ export function New() {
             Co ed Futbol • East Bay (All Day), CA
           </Text>
           {/* Parent Grid */}
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {/* core content section */}
             <div className="sm:col-span-2 xl:col-span-3 space-y-4">
               {/* team info section */}
@@ -53,9 +54,9 @@ export function New() {
                     Team Information
                   </Text>
                 </div>
-                {/* desktop child content grid */}
+                {/* child content grid */}
                 <ContentGrid>
-                  {/* Mobile container */}
+                  {/* Mobile view container */}
                   <div className="bg-foreground rounded-lg py-5 px-3 flex flex-col sm:hidden space-y-4">
                     <div className="flex flex-col">
                       <Text weight="bold" size="sm" as="p">
@@ -130,7 +131,7 @@ export function New() {
                     </div>
                   </div>
                   {/* 2nd container */}
-                  <div className="hidden sm:block bg-foreground flex-col p-5 space-y-5 rounded-tr-lg rounded-bl-lg">
+                  <div className="hidden sm:block bg-foreground flex-col p-5 space-y-5 rounded-tr-lg rounded-br-lg">
                     <div className="flex flex-col">
                       <Text weight="bold" size="sm" as="p">
                         Leagues
@@ -163,7 +164,7 @@ export function New() {
                   </Text>
                 </div>
                 <ContentGrid>
-                  <div className="hidden sm:block bg-foreground  flex-col p-5 space-y-5 rounded-t-lg sm:rounded-tl-lg sm:rounded-bl-lg">
+                  <div className=" bg-foreground  flex-col p-5 space-y-5 rounded-t-lg sm:rounded-tl-lg sm:rounded-bl-lg">
                     <div className="flex flex-col space-y-4">
                       <Text weight="bold" size="sm" as="p">
                         4-3-3
@@ -184,11 +185,62 @@ export function New() {
                       </Text>
                     </div>
                   </div>
+                  <div className="h-full min-h-[400px] bg-green"></div>
                 </ContentGrid>
               </div>
+
+              {/* jersey details section */}
+              <div>
+                <div className="flex w-full">
+                  <Text size="md" weight="bold" scale>
+                    Jersey Details
+                  </Text>
+                </div>
+              </div>
+              <ContentGrid>
+                <div className="flex bg-gray-700"></div>
+                <div className="flex flex-col bg-foreground space-y-8 p-5 rounded-lg">
+                  <div className="flex flex-col space-y-2">
+                    <Text weight="bold">Details</Text>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>Outfield color</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>White</Text>
+                    </div>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>Goalie Color</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>Neon Green</Text>
+                    </div>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>Brand</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>Nike</Text>
+                    </div>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>Style</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>Academy 22</Text>
+                    </div>
+                  </div>
+                  <div className="flex flex-col space-y-2">
+                    <Text weight="bold">Sponsors</Text>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>2023-present</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>No Sponsorship</Text>
+                    </div>
+                    <div className="flex items-center space-x-4 whitespace-nowrap">
+                      <Text>2015-2023</Text>
+                      <div className="w-full border-secondary border border-dashed"></div>
+                      <Text>Calicraft Brewing Co.</Text>
+                    </div>
+                  </div>
+                </div>
+              </ContentGrid>
             </div>
             {/* side bar */}
-            <div className="hidden xl:flex xl:col-span-1 w-full">
+            <div className="hidden xl:flex xl:col-span-1 w-full h-full bg-slate-500">
               Side bar component
             </div>
           </div>

@@ -19,4 +19,6 @@ export const colors = {
   //   eventually can make blue scale
   "--blue-100": "hsl(206, 41%, 97%)",
   "--blue-800": "hsl(215, 47%, 33%)",
+
+  "--green-500": "hsl(125, 36%, 53%)",
 };
