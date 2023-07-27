@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Script from 'next/script';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Script from "next/script";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-
-
     <div className={styles.container}>
-
-      <Script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.340/build/spline-viewer.js"></Script>
+      <Script
+        type="module"
+        src="https://unpkg.com/@splinetool/viewer@0.9.340/build/spline-viewer.js"
+      ></Script>
 
       <Head>
         <title>Tiny Hippos F.C.</title>
@@ -16,23 +16,19 @@ export default function Home() {
       </Head>
 
       <div className={styles.splineviewer}>
-        <spline-viewer loading-anim url="https://prod.spline.design/2VBfQlbkZu9po01U/scene.splinecode"></spline-viewer>
+        <spline-viewer
+          loading-anim
+          url="https://prod.spline.design/2VBfQlbkZu9po01U/scene.splinecode"
+        ></spline-viewer>
       </div>
 
-
-
       <main>
-        <h1 className={styles.title}>
-          Tiny Hippos F.C.
-        </h1>
+        <h1 className={styles.title}>Tiny Hippos F.C.</h1>
 
         <p className={styles.description}>
           An East Bay Sunday Fútbol Team - Coming soon...
         </p>
-
-
       </main>
-
 
       <style jsx>{`
         main {
@@ -43,7 +39,6 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
       `}</style>
 
       <style jsx global>{`
@@ -60,5 +55,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
