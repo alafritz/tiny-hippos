@@ -1,38 +1,83 @@
+/* @import "fonts.css"; */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background: linear-gradient(180deg, #a5c9fb 0%, rgba(165, 201, 251, 0) 100%); */
+}
+
+/* removes out-dated sub-pixel antialiasing on typography */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+/* ensures that our layout wrapper can consume min-height of 100% */
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* overrides the variable default margins given to h1 and p tags etc */
+* {
+  margin: 0;
+}
+/* converts media to block level element isntead of inline elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* instruct form elements to match the typography in their surrounding env */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  /* font-family: inter;÷÷ */
+  /* font-size: 50px; */
+}
+
+/* p,
+h2,
+h3,
+button,
+span,
+h4 { */
+/* font-family: Poppins; */
+/* } */
+/* ensures that tyogrpaphy can be hard-wrapped if no spaces are found to create the default soft-wrap */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  /* optional - if you want there to be hyphens when hard wrapped */
+  /* hyphens: auto; */
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
 }
