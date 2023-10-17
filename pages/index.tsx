@@ -49,7 +49,7 @@ export function New() {
               <TeamInfoSection />
               <FormationSection />
               <JerseyDetailsSection />
-              <div className="w-full space-y-4 lg:hidden bg-background">
+              <div className="w-full space-y-4 xl:hidden bg-background">
                 <TeamActivitiesSection />
               </div>
             </div>
