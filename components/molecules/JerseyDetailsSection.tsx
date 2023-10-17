@@ -1,4 +1,5 @@
 import { ContentGrid, Text } from "@components/common";
+import Image from "next/image";
 
 export function JerseyDetailsSection() {
   return (
@@ -9,8 +10,15 @@ export function JerseyDetailsSection() {
         </Text>
       </div>
       <ContentGrid>
-        <div className="flex bg-gray-700"></div>
-        <div className="flex flex-col p-5 space-y-8 rounded-lg bg-foreground">
+        <div className="relative flex h-full min-h-[300px] rounded-tl-lg rounded-bl-lg bg-foreground">
+          <Image
+            src="/assets/a-jersey.png"
+            layout="fill"
+            objectFit="contain"
+            alt="jersey"
+          />
+        </div>
+        <div className="flex flex-col p-5 space-y-8 rounded-tr-lg rounded-br-lg bg-foreground">
           <div className="flex flex-col space-y-2">
             <Text weight="bold">Details</Text>
             <div className="flex items-center space-x-4 whitespace-nowrap">

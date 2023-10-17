@@ -1,4 +1,5 @@
 import { ContentGrid, Heading, Text } from "@components/common";
+import Image from "next/image";
 
 export function FormationSection() {
   return (
@@ -28,7 +29,14 @@ export function FormationSection() {
             </Text>
           </div>
         </div>
-        <div className="h-full min-h-[400px] bg-green"></div>
+        <div className="relative h-[590px]">
+          <Image
+            alt="soccer"
+            src="/assets/soccer_pitch.png"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       </ContentGrid>
     </div>
   );

@@ -1,21 +1,13 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import {
-  Layout,
-  ContentGrid,
-  FullBleedWrapper,
-  Flex,
-  Text,
-  LinkText,
-} from "@components/common";
 import { SplineRotation } from "@components/SplineRotation";
-import Image from "next/image";
-import { Content } from "next/font/google";
+import { FullBleedWrapper, Layout, Text } from "@components/common";
 import {
   FormationSection,
   JerseyDetailsSection,
   TeamInfoSection,
 } from "@components/molecules";
+import { TeamActivitiesSection } from "@components/molecules/TeamActivitiesSection";
+import Head from "next/head";
+import Image from "next/image";
 
 export function New() {
   return (
@@ -57,16 +49,13 @@ export function New() {
               <TeamInfoSection />
               <FormationSection />
               <JerseyDetailsSection />
+              <div className="w-full space-y-4 lg:hidden bg-background">
+                <TeamActivitiesSection />
+              </div>
             </div>
             {/* side bar */}
-            <div className="flex-col hidden w-full h-full xl:flex xl:col-span-1 bg-slate-500">
-              <Text weight="bold" size="sm" as="p">
-                Team Activites
-              </Text>
-              <Text weight="bold" size="xs" as="p">
-                Post Match Spots
-              </Text>
-              <LinkText href="https://gilmanbrew.com/">Gilman Brewing</LinkText>
+            <div className="flex-col hidden w-full h-full pt-20 space-y-4 xl:flex xl:col-span-1 bg-background">
+              <TeamActivitiesSection />
             </div>
           </div>
         </div>

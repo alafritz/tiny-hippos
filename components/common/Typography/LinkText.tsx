@@ -11,14 +11,14 @@ interface LinkTextProps extends TypographyTypes {
 
 export const LinkText = (props: PropsWithChildren<LinkTextProps>) => {
   return (
-    <Link href={props.href} passHref>
+    <Link href={props.href} passHref className="flex items-center space-x-2">
       <Text
         // as="a"
         // weight="semiBold"
         size="xs"
         link
         target="_blank"
-        className="hover:opacity-30"
+        className="underline hover:opacity-30"
         {...props}
       >
         {props.children}
