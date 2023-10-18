@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Script
         type="module"
-        src="https://unpkg.com/@splinetool/viewer@0.9.418/build/spline-viewer.js"
+        src="https://unpkg.com/@splinetool/viewer@0.9.485/build/spline-viewer.js"
       ></Script>
     </main>
     // <ThemeProvider>
@@ -27,3 +27,5 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
+
+
