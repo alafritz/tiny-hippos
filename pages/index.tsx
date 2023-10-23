@@ -1,5 +1,6 @@
 import { SplineRotation } from "@components/SplineRotation";
 import { FullBleedWrapper, Layout, Text } from "@components/common";
+import { TreeIcon, WaveIcon, WavesBorder } from "@components/icons";
 import {
   FormationSection,
   JerseyDetailsSection,
@@ -10,6 +11,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 export function New() {
+  const waveCount = 14;
   return (
     <>
       <Head>
@@ -50,11 +52,33 @@ export function New() {
               <FormationSection />
               <JerseyDetailsSection />
               <div className="w-full space-y-4 xl:hidden bg-background">
+                <WavesBorder className="mb-4" />
                 <TeamActivitiesSection />
+                <WavesBorder className="mt-4" />
+              </div>
+              <div className="hidden md:flex">
+                <WavesBorder />
+                <WavesBorder />
+                <WavesBorder />
+              </div>
+              {/* footer */}
+              <div className="flex items-center space-x-1">
+                <TreeIcon />
+                <Text variant="secondary" size="xs">
+                  Made with in Oakland by Fritz and Gabe W.
+                </Text>
               </div>
             </div>
             {/* side bar */}
-            <div className="flex-col hidden w-full h-full pt-20 space-y-4 xl:flex xl:col-span-1 bg-background">
+            <div className="flex-col hidden w-full h-full space-y-4 xl:flex xl:col-span-1 bg-background">
+              {/* todo: make the wave icon dynamic based on available width */}
+              {/* <div className="flex ">
+                {Array.from({ length: 20 }).map((_, idx) => {
+                  return <WaveIcon className="-ml-0.3" />;
+                })}
+              </div> */}
+              <WavesBorder className="mb-20" />
+
               <TeamActivitiesSection />
             </div>
           </div>
@@ -64,3 +88,5 @@ export function New() {
   );
 }
 export default New;
+
+const waveCount = [];
