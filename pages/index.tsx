@@ -25,13 +25,12 @@ export function New() {
           <SplineRotation />
         </FullBleedWrapper>
         {/* core content section */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center space-y-2.5">
           <Image
             src="/assets/logo.svg"
             alt="Tinny Hippos Logo"
-            // className="dark:invert"
             width={620}
-            height={200}
+            height={100}
             priority
           />
           <Text
@@ -47,7 +46,7 @@ export function New() {
           {/* Parent Grid */}
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {/* core content section */}
-            <div className="space-y-4 sm:col-span-2 xl:col-span-3">
+            <div className="mt-20 mb-40 space-y-10 sm:col-span-2 xl:col-span-3">
               <TeamInfoSection />
               <FormationSection />
               <JerseyDetailsSection />
@@ -62,7 +61,7 @@ export function New() {
                 <WavesBorder />
               </div>
               {/* footer */}
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center mb-40 space-x-1">
                 <TreeIcon />
                 <Text variant="secondary" size="xs">
                   Made with in Oakland by Fritz and Gabe W.
@@ -70,15 +69,8 @@ export function New() {
               </div>
             </div>
             {/* side bar */}
-            <div className="flex-col hidden w-full h-full space-y-4 xl:flex xl:col-span-1 bg-background">
-              {/* todo: make the wave icon dynamic based on available width */}
-              {/* <div className="flex ">
-                {Array.from({ length: 20 }).map((_, idx) => {
-                  return <WaveIcon className="-ml-0.3" />;
-                })}
-              </div> */}
-              <WavesBorder className="mb-20" />
-
+            <div className="flex-col hidden w-full h-full xl:flex xl:col-span-1 bg-background xl:mt-20">
+              <WavesBorder />
               <TeamActivitiesSection />
             </div>
           </div>

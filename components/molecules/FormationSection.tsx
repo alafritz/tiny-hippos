@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function FormationSection() {
   return (
-    <div>
+    <div className="flex flex-col gap-y-2.5">
       <div className="flex w-full">
         <Text size="md" weight="bold" scale>
           Formation
@@ -34,7 +34,7 @@ export function FormationSection() {
             alt="soccer"
             src="/assets/soccer_pitch.png"
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
           />
         </div>
       </ContentGrid>

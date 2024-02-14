@@ -2,7 +2,7 @@ import { ContentGrid, Text } from "@components/common";
 
 export function TeamInfoSection() {
   return (
-    <div>
+    <div className="flex flex-col gap-y-2.5">
       <div className="flex w-full">
         <Text size="md" weight="bold" scale>
           Team Information

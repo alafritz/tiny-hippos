@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function JerseyDetailsSection() {
   return (
-    <div>
+    <div className="flex flex-col gap-y-2.5">
       <div className="flex w-full">
         <Text size="md" weight="bold" scale>
           Jersey Details
