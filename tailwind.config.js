@@ -17,6 +17,7 @@ module.exports = {
         ["text-primary"]: "var(--colors-text-primary)",
         ["text-secondary"]: "var(--colors-text-secondary)",
         ["green"]: "var(--colors-green)",
+        ["border"]: "var(--colors-border)",
       },
     },
   },
