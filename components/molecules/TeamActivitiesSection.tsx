@@ -2,7 +2,7 @@ import { LinkText, Text } from "@components/common";
 
 export function TeamActivitiesSection() {
   return (
-    <div className="flex flex-col py-10 gap-y-5">
+    <div className="flex flex-col gap-y-5">
       <Text weight="bold" size="sm" as="p">
         Team Activites
       </Text>

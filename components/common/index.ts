@@ -7,3 +7,5 @@ export * from "./ContentGrid";
 export * from "./FullBleedWrapper";
 export * from "./Flex";
 export * from "./Typography";
+export * from "./SectionWrapper";
+export * from "./ColumnWrapper";

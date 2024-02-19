@@ -5,9 +5,11 @@ export const ContentGrid = styled("div", {
   display: "flex",
   flexDirection: "column",
   width: "100%",
-  "@bp2": {
+  gap: "20px",
+  "@bp1": {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
+    gap: "20px",
   },
   //   "@bp3": {
   //     gridTemplateColumns: "1fr 1fr 1fr",
