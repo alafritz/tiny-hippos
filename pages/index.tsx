@@ -37,12 +37,10 @@ export function New() {
             Co ed Futbol • East Bay (All Day), CA
           </Text>
 
-          {/* core content section */}
           <div className="pt-10 pb-20 space-y-10 lg:pb-40">
             <TeamInfoSection />
             <FormationSection />
             <JerseyDetailsSection />
-
             <WavesBorder />
             <TeamActivitiesSection />
             <WavesBorder />
