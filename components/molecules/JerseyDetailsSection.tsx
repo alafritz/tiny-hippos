@@ -1,5 +1,10 @@
-import { ContentGrid, SectionWrapper, Text } from "@components/common";
-import { CardWrapper } from "@components/common/CardWrapper.tsx";
+import {
+  ContentGrid,
+  SectionWrapper,
+  Text,
+  CardWrapper,
+} from "@components/common";
+
 import Image from "next/image";
 import { PropsWithChildren } from "react";
 

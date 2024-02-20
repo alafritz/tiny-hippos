@@ -20,9 +20,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"
       ></Script>
     </main>
-    // <ThemeProvider>
-    //   <Component {...pageProps} />
-    // </ThemeProvider>
   );
 }
 

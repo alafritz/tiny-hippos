@@ -1,6 +1,6 @@
 import { SplineRotation } from "@components/SplineRotation";
 import { FullBleedWrapper, Layout, Text } from "@components/common";
-import { TreeIcon, WaveIcon, WavesBorder } from "@components/icons";
+import { TreeIcon, WavesBorder } from "@components/icons";
 import {
   FormationSection,
   JerseyDetailsSection,
@@ -10,8 +10,7 @@ import { TeamActivitiesSection } from "@components/molecules/TeamActivitiesSecti
 import Head from "next/head";
 import Image from "next/image";
 
-export function New() {
-  const waveCount = 14;
+export function Home() {
   return (
     <>
       <Head>
@@ -65,6 +64,4 @@ export function New() {
     </>
   );
 }
-export default New;
-
-const waveCount = [];
+export default Home;

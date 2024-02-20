@@ -4,9 +4,8 @@ import {
   SectionWrapper,
   Text,
   TextWrapper,
+  CardWrapper,
 } from "@components/common";
-import { CardWrapper } from "@components/common/CardWrapper.tsx";
-import { PropsWithChildren } from "react";
 
 export function TeamInfoSection() {
   return (

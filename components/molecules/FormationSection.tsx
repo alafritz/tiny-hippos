@@ -1,5 +1,11 @@
-import { ContentGrid, Heading, SectionWrapper, Text } from "@components/common";
-import { CardWrapper } from "@components/common/CardWrapper.tsx";
+import {
+  ContentGrid,
+  Heading,
+  SectionWrapper,
+  Text,
+  CardWrapper,
+} from "@components/common";
+
 import Image from "next/image";
 
 export function FormationSection() {
