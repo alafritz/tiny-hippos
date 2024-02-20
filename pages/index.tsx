@@ -33,11 +33,18 @@ export function New() {
             height={100}
             priority
           />
-          <Text size="md" as="h3" weight="regular" variant="secondary" scale>
+          <Text
+            size="md"
+            as="h3"
+            weight="regular"
+            variant="secondary"
+            scale
+            className="pt-2.5"
+          >
             Co ed Futbol • East Bay (All Day), CA
           </Text>
 
-          <div className="pt-10 pb-20 space-y-10 lg:pb-40">
+          <div className="pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
             <TeamInfoSection />
             <FormationSection />
             <JerseyDetailsSection />

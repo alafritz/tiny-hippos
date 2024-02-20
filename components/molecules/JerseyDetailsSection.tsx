@@ -1,6 +1,7 @@
 import { ContentGrid, SectionWrapper, Text } from "@components/common";
 import { CardWrapper } from "@components/common/CardWrapper.tsx";
 import Image from "next/image";
+import { PropsWithChildren } from "react";
 
 export function JerseyDetailsSection() {
   return (
@@ -9,7 +10,7 @@ export function JerseyDetailsSection() {
         Jersey Details
       </Text>
       <CardWrapper>
-        <div className="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-2 gap-y-5">
           {/* todo: replace with carousel */}
           <div className="relative flex h-full min-h-[300px]">
             <Image
@@ -19,46 +20,60 @@ export function JerseyDetailsSection() {
               alt="jersey"
             />
           </div>
-          <div className="flex flex-col p-5 space-y-8 rounded-tr-lg rounded-br-lg bg-foreground">
-            <div className="flex flex-col space-y-2">
+          <div className="flex flex-col grid-cols-2 gap-y-8 md:grid md:gap-8 lg:flex lg:flex-col">
+            <SectionWrapper>
               <Text weight="bold">Details</Text>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              <TextBorderWrapper>
                 <Text>Outfield color</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>White</Text>
-              </div>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              </TextBorderWrapper>
+              <TextBorderWrapper>
                 <Text>Goalie Color</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>Neon Green</Text>
-              </div>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              </TextBorderWrapper>
+              <TextBorderWrapper>
                 <Text>Brand</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>Nike</Text>
-              </div>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              </TextBorderWrapper>
+
+              <TextBorderWrapper>
                 <Text>Style</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>Academy 22</Text>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-2">
+              </TextBorderWrapper>
+            </SectionWrapper>
+            <SectionWrapper>
               <Text weight="bold">Sponsors</Text>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              <TextBorderWrapper>
                 <Text>2023-present</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>No Sponsorship</Text>
-              </div>
-              <div className="flex items-center space-x-4 whitespace-nowrap">
+              </TextBorderWrapper>
+
+              <TextBorderWrapper>
                 <Text>2015-2023</Text>
-                <div className="w-full border border-dashed border-border"></div>
+                <DottedBorder />
                 <Text>Calicraft Brewing Co.</Text>
-              </div>
-            </div>
+              </TextBorderWrapper>
+            </SectionWrapper>
           </div>
         </div>
       </CardWrapper>
     </SectionWrapper>
   );
+}
+
+function TextBorderWrapper({ children }: PropsWithChildren) {
+  return (
+    <div className="flex items-center space-x-4 whitespace-nowrap">
+      {children}
+    </div>
+  );
+}
+
+function DottedBorder() {
+  return <div className="w-full border border-dashed border-border" />;
 }

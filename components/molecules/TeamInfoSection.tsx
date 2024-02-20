@@ -3,6 +3,7 @@ import {
   ContentGrid,
   SectionWrapper,
   Text,
+  TextWrapper,
 } from "@components/common";
 import { CardWrapper } from "@components/common/CardWrapper.tsx";
 import { PropsWithChildren } from "react";
@@ -67,8 +68,4 @@ export function TeamInfoSection() {
       </CardWrapper>
     </SectionWrapper>
   );
-}
-
-function TextWrapper({ children }: PropsWithChildren) {
-  return <div className="flex flex-col gap-y-1">{children}</div>;
 }

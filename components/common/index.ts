@@ -9,3 +9,4 @@ export * from "./Flex";
 export * from "./Typography";
 export * from "./SectionWrapper";
 export * from "./ColumnWrapper";
+export * from "./TextWrapper";

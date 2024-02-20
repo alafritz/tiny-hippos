@@ -1,9 +1,8 @@
-import { ColumnWrapper, LinkText, Text } from "@components/common";
-import { PropsWithChildren } from "react";
+import { ColumnWrapper, LinkText, Text, TextWrapper } from "@components/common";
 
 export function TeamActivitiesSection() {
   return (
-    <div className="grid sm:grid-cols-3 gap-x-5">
+    <div className="grid sm:grid-cols-3 gap-x-5 gap-y-5">
       <ColumnWrapper>
         <TextWrapper>
           <Text weight="bold" size="xs" as="p">
@@ -24,9 +23,7 @@ export function TeamActivitiesSection() {
           <Text weight="bold" size="xs" as="p">
             Non Patch spots
           </Text>
-          <LinkText href="https://gilmanbrew.com/">
-            Mad Oak Barn 'n' yard
-          </LinkText>
+          <LinkText href="https://gilmanbrew.com/">Mad Oak</LinkText>
           <LinkText href="https://gilmanbrew.com/">NIDO's backyard</LinkText>
         </TextWrapper>
       </ColumnWrapper>
@@ -41,8 +38,4 @@ export function TeamActivitiesSection() {
       </ColumnWrapper>
     </div>
   );
-}
-
-function TextWrapper({ children }: PropsWithChildren) {
-  return <div className="flex flex-col w-full gap-y-1">{children}</div>;
 }
