@@ -14,7 +14,7 @@ export function Home() {
   return (
     <>
       <Head>
-        <title>Tiny Hipos FC</title>
+        <title>Tiny Hippos FC</title>
         <meta name="description" content="Co-ed futbol team" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
