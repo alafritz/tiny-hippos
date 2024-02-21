@@ -1,10 +1,5 @@
-import { PropsWithChildren } from "react";
-import { styled } from "stitches.config";
-import { ContentWrapper, FullBleedWrapper } from "@components/common";
-import dynamic from "next/dynamic";
-
-import Link from "next/link";
-import { LayoutWrapper } from "../LayoutWrapper";
+import { ContentWrapper } from "./ContentWrapper";
+import { LayoutWrapper } from "./LayoutWrapper";
 // import { Header } from "@components/Header";
 // const Header = dynamic(() => import("./../Header") as any, {
 //   ssr: false,

@@ -1,4 +1,3 @@
-import { FullBleedWrapper } from "@components/common/FullBleedWrapper";
 import styles from "./SplineRotation.module.css";
 
 export function SplineRotation() {

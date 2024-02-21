@@ -1,5 +1,6 @@
 import { SplineRotation } from "@components/SplineRotation";
 import { FullBleedWrapper, Layout, Text } from "@components/common";
+import { TreeIcon, WavesBorder } from "@components/icons";
 import {
   FormationSection,
   JerseyDetailsSection,
@@ -9,7 +10,7 @@ import { TeamActivitiesSection } from "@components/molecules/TeamActivitiesSecti
 import Head from "next/head";
 import Image from "next/image";
 
-export function New() {
+export function Home() {
   return (
     <>
       <Head>
@@ -23,13 +24,12 @@ export function New() {
           <SplineRotation />
         </FullBleedWrapper>
         {/* core content section */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center">
           <Image
             src="/assets/logo.svg"
             alt="Tinny Hippos Logo"
-            // className="dark:invert"
             width={620}
-            height={200}
+            height={100}
             priority
           />
           <Text
@@ -38,24 +38,25 @@ export function New() {
             weight="regular"
             variant="secondary"
             scale
-            css={{ "@bp1": { fontSize: "$lg" } }}
+            className="pt-2.5"
           >
             Co ed Futbol • East Bay (All Day), CA
           </Text>
-          {/* Parent Grid */}
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            {/* core content section */}
-            <div className="space-y-4 sm:col-span-2 xl:col-span-3">
-              <TeamInfoSection />
-              <FormationSection />
-              <JerseyDetailsSection />
-              <div className="w-full space-y-4 xl:hidden bg-background">
-                <TeamActivitiesSection />
-              </div>
-            </div>
-            {/* side bar */}
-            <div className="flex-col hidden w-full h-full pt-20 space-y-4 xl:flex xl:col-span-1 bg-background">
-              <TeamActivitiesSection />
+
+          <div className="pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
+            <TeamInfoSection />
+            <FormationSection />
+            <JerseyDetailsSection />
+            <WavesBorder />
+            <TeamActivitiesSection />
+            <WavesBorder />
+
+            {/* footer */}
+            <div className="flex items-center mb-40 space-x-1">
+              <TreeIcon />
+              <Text variant="secondary" size="xs">
+                Made with in Oakland by Fritz and Gabe W.
+              </Text>
             </div>
           </div>
         </div>
@@ -63,4 +64,4 @@ export function New() {
     </>
   );
 }
-export default New;
+export default Home;

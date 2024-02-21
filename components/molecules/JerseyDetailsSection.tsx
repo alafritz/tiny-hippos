@@ -1,62 +1,84 @@
-import { ContentGrid, Text } from "@components/common";
+import {
+  ContentGrid,
+  SectionWrapper,
+  Text,
+  CardWrapper,
+} from "@components/common";
+
 import Image from "next/image";
+import { PropsWithChildren } from "react";
 
 export function JerseyDetailsSection() {
   return (
-    <div>
-      <div className="flex w-full">
-        <Text size="md" weight="bold" scale>
-          Jersey Details
-        </Text>
-      </div>
-      <ContentGrid>
-        <div className="relative flex h-full min-h-[300px] rounded-tl-lg rounded-bl-lg bg-foreground">
-          <Image
-            src="/assets/a-jersey.png"
-            layout="fill"
-            objectFit="contain"
-            alt="jersey"
-          />
-        </div>
-        <div className="flex flex-col p-5 space-y-8 rounded-tr-lg rounded-br-lg bg-foreground">
-          <div className="flex flex-col space-y-2">
-            <Text weight="bold">Details</Text>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>Outfield color</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>White</Text>
-            </div>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>Goalie Color</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>Neon Green</Text>
-            </div>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>Brand</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>Nike</Text>
-            </div>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>Style</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>Academy 22</Text>
-            </div>
+    <SectionWrapper>
+      <Text size="md" weight="bold" scale>
+        Jersey Details
+      </Text>
+      <CardWrapper>
+        <div className="grid lg:grid-cols-2 gap-y-5">
+          {/* todo: replace with carousel */}
+          <div className="relative flex h-full min-h-[300px]">
+            <Image
+              src="/assets/a-jersey.png"
+              layout="fill"
+              objectFit="contain"
+              alt="jersey"
+            />
           </div>
-          <div className="flex flex-col space-y-2">
-            <Text weight="bold">Sponsors</Text>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>2023-present</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>No Sponsorship</Text>
-            </div>
-            <div className="flex items-center space-x-4 whitespace-nowrap">
-              <Text>2015-2023</Text>
-              <div className="w-full border border-dashed border-secondary"></div>
-              <Text>Calicraft Brewing Co.</Text>
-            </div>
+          <div className="flex flex-col grid-cols-2 gap-y-8 md:grid md:gap-8 lg:flex lg:flex-col">
+            <SectionWrapper>
+              <Text weight="bold">Details</Text>
+              <TextBorderWrapper>
+                <Text>Outfield color</Text>
+                <DottedBorder />
+                <Text>White</Text>
+              </TextBorderWrapper>
+              <TextBorderWrapper>
+                <Text>Goalie Color</Text>
+                <DottedBorder />
+                <Text>Neon Green</Text>
+              </TextBorderWrapper>
+              <TextBorderWrapper>
+                <Text>Brand</Text>
+                <DottedBorder />
+                <Text>Nike</Text>
+              </TextBorderWrapper>
+
+              <TextBorderWrapper>
+                <Text>Style</Text>
+                <DottedBorder />
+                <Text>Academy 22</Text>
+              </TextBorderWrapper>
+            </SectionWrapper>
+            <SectionWrapper>
+              <Text weight="bold">Sponsors</Text>
+              <TextBorderWrapper>
+                <Text>2023-present</Text>
+                <DottedBorder />
+                <Text>No Sponsorship</Text>
+              </TextBorderWrapper>
+
+              <TextBorderWrapper>
+                <Text>2015-2023</Text>
+                <DottedBorder />
+                <Text>Calicraft Brewing Co.</Text>
+              </TextBorderWrapper>
+            </SectionWrapper>
           </div>
         </div>
-      </ContentGrid>
+      </CardWrapper>
+    </SectionWrapper>
+  );
+}
+
+function TextBorderWrapper({ children }: PropsWithChildren) {
+  return (
+    <div className="flex items-center space-x-4 whitespace-nowrap">
+      {children}
     </div>
   );
+}
+
+function DottedBorder() {
+  return <div className="w-full border border-dashed border-border" />;
 }

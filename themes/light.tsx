@@ -6,5 +6,6 @@ export const lightTheme = {
     "--colors-text-primary": "var(--dark-grey)",
     "--colors-text-secondary": "var(--grey-600)",
     "--colors-green": "var(--green-500)",
+    "--colors-border": "var(--grey-600)",
   },
 };

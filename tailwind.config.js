@@ -10,6 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "501px",
+        md: "701px",
+        lg: "861px",
+      },
       colors: {
         primary: "var(--colors-primary)",
         background: "var(--colors-background)",
@@ -17,6 +22,7 @@ module.exports = {
         ["text-primary"]: "var(--colors-text-primary)",
         ["text-secondary"]: "var(--colors-text-secondary)",
         ["green"]: "var(--colors-green)",
+        ["border"]: "var(--colors-border)",
       },
     },
   },
