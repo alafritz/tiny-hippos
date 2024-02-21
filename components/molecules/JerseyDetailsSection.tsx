@@ -34,7 +34,7 @@ export function JerseyDetailsSection() {
                 <Text>White</Text>
               </TextBorderWrapper>
               <TextBorderWrapper>
-                <Text>Goalie Color</Text>
+                <Text>Goalie color</Text>
                 <DottedBorder />
                 <Text>Neon Green</Text>
               </TextBorderWrapper>
