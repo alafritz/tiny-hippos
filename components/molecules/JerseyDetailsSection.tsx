@@ -80,5 +80,7 @@ function TextBorderWrapper({ children }: PropsWithChildren) {
 }
 
 function DottedBorder() {
-  return <div className="w-full border border-dashed border-border" />;
+  return <div className="w-full border" />;
 }
+
+// return <div className="w-full border border-dotted border-border" />;
