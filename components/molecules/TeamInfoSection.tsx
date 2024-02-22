@@ -19,7 +19,7 @@ export function TeamInfoSection() {
           <ColumnWrapper>
             <TextWrapper>
               <Text weight="bold" size="sm" as="p">
-                Owners
+                Structure
               </Text>
               <Text size="sm">Player owned and operated</Text>
             </TextWrapper>
@@ -37,9 +37,7 @@ export function TeamInfoSection() {
               </Text>
               <Text>East Bay, California</Text>
               <Text variant="secondary" size="xs">
-                Eastern region of the San Francisco, Bay Area and includes
-                cities along the eastern shores of the San Francisco Bay and San
-                Pablo Bay.
+                Our players hail from around the Bay, and our games are played in either in Berkeley or Emeryville.
               </Text>
             </TextWrapper>
           </ColumnWrapper>
