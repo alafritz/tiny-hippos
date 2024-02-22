@@ -10,7 +10,7 @@ export function TeamActivitiesSection() {
           </Text>
           <LinkText href="https://gilmanbrew.com/">Gilman Brewing</LinkText>
           <LinkText
-            href="https://gilmanbrew.com/"
+            href="https://fieldworkbrewing.com/berkeley/"
             className="whitespace-nowrap"
           >
             Fieldwork Brewing
@@ -23,8 +23,8 @@ export function TeamActivitiesSection() {
           <Text weight="bold" size="xs" as="p">
             Non Patch spots
           </Text>
-          <LinkText href="https://gilmanbrew.com/">Mad Oak</LinkText>
-          <LinkText href="https://gilmanbrew.com/">NIDO's backyard</LinkText>
+          <LinkText href="https://www.madoakbar.com/">Mad Oak</LinkText>
+          <LinkText href="https://www.backyardoakland.com/">NIDO's backyard</LinkText>
         </TextWrapper>
       </ColumnWrapper>
 
@@ -33,7 +33,7 @@ export function TeamActivitiesSection() {
           <Text weight="bold" size="xs" as="p">
             Big Supporters of
           </Text>
-          <LinkText href="https://gilmanbrew.com/">Oakland Roots</LinkText>
+          <LinkText href="https://www.oaklandrootssc.com/">Oakland Roots</LinkText>
         </TextWrapper>
       </ColumnWrapper>
     </div>
