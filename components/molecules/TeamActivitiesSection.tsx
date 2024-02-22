@@ -9,12 +9,7 @@ export function TeamActivitiesSection() {
             Post Match Spots
           </Text>
           <LinkText href="https://gilmanbrew.com/">Gilman Brewing</LinkText>
-          <LinkText
-            href="https://fieldworkbrewing.com/berkeley/"
-            className="whitespace-nowrap"
-          >
-            Fieldwork Brewing
-          </LinkText>
+          <LinkText href="https://fieldworkbrewing.com/berkeley/">Fieldwork Brewing</LinkText>
         </TextWrapper>
       </ColumnWrapper>
 
