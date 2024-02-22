@@ -40,7 +40,7 @@ export function Home() {
             scale
             className="pt-2.5"
           >
-            Co-ed fútbol • East Bay (All Day), CA
+            Co-ed Fútbol Team • East Bay (All Day), CA
           </Text>
 
           <div className="pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
