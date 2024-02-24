@@ -55,7 +55,7 @@ export function Home() {
             <div className="flex items-center mb-40 space-x-1">
               <TreeIcon />
               <Text variant="secondary" size="xs">
-                Made with in Oakland by Fritz and Gabe W.
+                Made with in Oakland by <a href="https://www.alafritz.com/">Fritz R.</a> and <a href="https://www.amarillo-studios.com/">Gabe W.</a>
               </Text>
             </div>
           </div>
@@ -65,3 +65,4 @@ export function Home() {
   );
 }
 export default Home;
+

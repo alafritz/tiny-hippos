@@ -6,17 +6,18 @@ export function TeamActivitiesSection() {
       <ColumnWrapper>
         <TextWrapper>
           <Text weight="bold" size="xs" as="p">
-            Post Match Spots
+            Post-match spots
           </Text>
           <LinkText href="https://gilmanbrew.com/">Gilman Brewing</LinkText>
           <LinkText href="https://fieldworkbrewing.com/berkeley/">Fieldwork Brewing</LinkText>
+          <LinkText href="https://thewolfhoundbar.com/">Wolfhound Bar</LinkText>
         </TextWrapper>
       </ColumnWrapper>
 
       <ColumnWrapper>
         <TextWrapper>
           <Text weight="bold" size="xs" as="p">
-            Non Patch spots
+            Non-match spots
           </Text>
           <LinkText href="https://www.madoakbar.com/">Mad Oak</LinkText>
           <LinkText href="https://www.backyardoakland.com/">NIDO's backyard</LinkText>
@@ -26,9 +27,11 @@ export function TeamActivitiesSection() {
       <ColumnWrapper>
         <TextWrapper>
           <Text weight="bold" size="xs" as="p">
-            Big Supporters of
+            Big supporters of
           </Text>
           <LinkText href="https://www.oaklandrootssc.com/">Oakland Roots</LinkText>
+          <LinkText href="https://www.oaklandsoulsc.com/">Oakland Soul</LinkText>
+          <LinkText href="https://www.arsenal.com/">Arsenal F.C.</LinkText>
         </TextWrapper>
       </ColumnWrapper>
     </div>
