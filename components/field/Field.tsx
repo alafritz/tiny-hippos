@@ -42,7 +42,9 @@ function DraggableCircle({
           setCirclePosition(newPosition);
         }
       }}
-      onPointerUp={() => (isDragging.current = false)}
+      onPointerUp={() => {
+        isDragging.current = false;
+      }}
     />
   );
 }
