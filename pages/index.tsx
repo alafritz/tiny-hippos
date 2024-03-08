@@ -1,5 +1,6 @@
 import { SplineRotation } from "@components/SplineRotation";
 import { FullBleedWrapper, Layout, Text } from "@components/common";
+import { Field } from "@components/field";
 import { TreeIcon, WavesBorder } from "@components/icons";
 import {
   FormationSection,
@@ -46,6 +47,7 @@ export function Home() {
           <div className="pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
             <TeamInfoSection />
             <FormationSection />
+            <Field />
             <JerseyDetailsSection />
             <WavesBorder />
             <TeamActivitiesSection />
@@ -55,7 +57,9 @@ export function Home() {
             <div className="flex items-center mb-40 space-x-1">
               <TreeIcon />
               <Text variant="secondary" size="xs">
-                Made with in Oakland by <a href="https://www.alafritz.com/">Fritz R.</a> and <a href="https://www.amarillo-studios.com/">Gabe W.</a>
+                Made with in Oakland by{" "}
+                <a href="https://www.alafritz.com/">Fritz R.</a> and{" "}
+                <a href="https://www.amarillo-studios.com/">Gabe W.</a>
               </Text>
             </div>
           </div>
@@ -65,4 +69,3 @@ export function Home() {
   );
 }
 export default Home;
-
