@@ -1,21 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
-  trailingSlash: true,
+  // Remove output: 'export' - we're using full Next.js now
   images: {
-    unoptimized: true
+    // Cloudflare Images optimization
+    loader: 'custom',
+    loaderFile: './image-loader.js'
   },
   // Handle Three.js and other client-side libraries
   experimental: {
     esmExternals: 'loose'
-  },
-  // Ensure compatibility with static export
-  typescript: {
-    ignoreBuildErrors: false
-  },
-  eslint: {
-    ignoreDuringBuilds: false
   }
 }
 
