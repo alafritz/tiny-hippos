@@ -4,6 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
+    "export": "next build && next export"
   },
   "dependencies": {
     "@react-three/drei": "^9.101.0",
