@@ -12,20 +12,32 @@ export function JerseyDetailsSection() {
   return (
     <SectionWrapper>
       <Text size="md" weight="bold" scale>
-        Jersey Details
+        Jersey details
       </Text>
       <CardWrapper>
-        <div className="grid lg:grid-cols-2 gap-y-5">
-          {/* todo: replace with carousel */}
-          <div className="relative flex h-full min-h-[300px]">
-            <Image
-              src="/assets/a-jersey.png"
-              layout="fill"
-              objectFit="contain"
-              alt="jersey"
-            />
+        <div className="flex flex-col lg:flex-row gap-y-5 gap-x-[20px]">
+          {/* Jersey images */}
+          <div className="flex gap-[10px] min-h-[300px] lg:w-1/2">
+            <div className="relative w-[200px] shrink-0 overflow-hidden rounded-[10px]">
+              <Image
+                src="/assets/a-jersey.png"
+                layout="fill"
+                objectFit="cover"
+                alt="a jersey"
+              />
+            </div>
+            <div className="relative w-[200px] shrink-0 overflow-hidden rounded-[10px]">
+              <Image
+                src="/assets/b-jersey.png"
+                layout="fill"
+                objectFit="cover"
+                alt="b jersey"
+              />
+            </div>
+            <div className="flex-1 bg-[#A59AFD] rounded-[10px]" />
           </div>
-          <div className="flex flex-col grid-cols-2 gap-y-8 md:grid md:gap-8 lg:flex lg:flex-col">
+          {/* Details and sponsors */}
+          <div className="flex flex-col grid-cols-2 gap-y-8 md:grid md:gap-8 lg:flex lg:flex-col lg:w-1/2">
             <SectionWrapper>
               <Text weight="bold">Details</Text>
               <TextBorderWrapper>

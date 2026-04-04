@@ -34,14 +34,19 @@ export function FormationSection() {
             </Text>
           </ContentGrid>
         </div>
-        <div className="relative h-[560px] mx-auto max-w-[440px] rounded-lg overflow-hidden">
-          <Image
-            alt="soccer"
-            src="/assets/soccerpitch.png"
-            layout="fill"
-            priority
-            objectFit="cover"
-          />
+        {/*pitch*/}
+        <div className="flex gap-[20px]">
+          <div className="hidden min-[601px]:block flex-1 bg-[#A5C9FB] rounded-[10px]" />
+          <div className="relative h-[560px] w-full max-w-[440px] rounded-lg overflow-hidden shrink-0">
+            <Image
+              alt="soccer"
+              src="/assets/soccerpitch.png"
+              layout="fill"
+              priority
+              objectFit="cover"
+            />
+          </div>
+          <div className="hidden min-[601px]:block flex-1 bg-[#A5C9FB] rounded-[10px]" />
         </div>
       </CardWrapper>
     </SectionWrapper>

@@ -11,7 +11,7 @@ export function TeamInfoSection() {
   return (
     <SectionWrapper>
       <Text size="md" weight="bold" scale>
-        Team Information
+        Team information
       </Text>
 
       <CardWrapper>
