@@ -1,4 +1,4 @@
-export function LinkIcon(props: JSX.IntrinsicElements["svg"]) {
+export function LinkIcon(props: React.JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       width="12"

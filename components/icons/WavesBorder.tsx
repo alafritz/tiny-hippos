@@ -1,4 +1,4 @@
-export function WavesBorder(props: JSX.IntrinsicElements["svg"]) {
+export function WavesBorder(props: React.JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       width="960"

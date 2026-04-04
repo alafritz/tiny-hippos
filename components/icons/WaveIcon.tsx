@@ -1,4 +1,4 @@
-export function WaveIcon(props: JSX.IntrinsicElements["svg"]) {
+export function WaveIcon(props: React.JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       width="16"

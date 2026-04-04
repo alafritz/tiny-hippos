@@ -1,4 +1,4 @@
-export function TreeIcon(props: JSX.IntrinsicElements["svg"]) {
+export function TreeIcon(props: React.JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       width="32"

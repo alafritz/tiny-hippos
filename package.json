@@ -15,14 +15,15 @@
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
+    "@types/react-dom": "^19.2.3",
     "embla-carousel-react": "^8.0.0-rc23",
-    "next": "14.2.15",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/node": "20.4.2",
-    "@types/react": "^18.2.15",
+    "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
