@@ -10,8 +10,8 @@
     "clean": "rm -rf .next out node_modules",
     "lint": "next lint",
     "preview": "npm run build && wrangler dev",
-    "deploy": "npm run build && npx opennextjs-cloudflare && wrangler deploy",
-    "cf-build": "npx opennextjs-cloudflare"
+    "deploy": "npm run build && npx opennextjs-cloudflare build && wrangler deploy",
+    "cf-build": "npx opennextjs-cloudflare build"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
@@ -31,11 +31,7 @@
     "typescript": "5.1.6"
   },
   "engines": {
-    "nnode": ">=20.19.0",
+    "node": ">=20.19.0",
     "npm": ">=8.0.0"
-  },
-  "build": {
-    "cf-build": "opennextjs-cloudflare build",
-    "deploy": "npm run build && opennextjs-cloudflare build && wrangler deploy"
   }
 }
