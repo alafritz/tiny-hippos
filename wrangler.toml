@@ -3,6 +3,11 @@ name = "tiny-hippos"
 compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
 
+routes = [
+  { pattern = "tinyhippos.club", custom_domain = true },
+  { pattern = "www.tinyhippos.club", custom_domain = true },
+]
+
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"

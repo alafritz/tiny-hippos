@@ -31,7 +31,11 @@
     "typescript": "5.1.6"
   },
   "engines": {
-    "node": ">=18.0.0",
+    "nnode": ">=20.19.0",
     "npm": ">=8.0.0"
+  },
+  "build": {
+    "cf-build": "opennextjs-cloudflare build",
+    "deploy": "npm run build && opennextjs-cloudflare build && wrangler deploy"
   }
 }
