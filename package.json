@@ -9,7 +9,7 @@
     "export": "next build",
     "clean": "rm -rf .next out node_modules",
     "lint": "next lint",
-    "preview": "npm run build && wrangler dev",
+    "preview": "npm run build && npx serve out"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
