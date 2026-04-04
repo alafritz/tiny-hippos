@@ -10,8 +10,6 @@
     "clean": "rm -rf .next out node_modules",
     "lint": "next lint",
     "preview": "npm run build && wrangler dev",
-    "deploy": "npm run build && npx opennextjs-cloudflare build && wrangler deploy",
-    "cf-build": "npx opennextjs-cloudflare build"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
@@ -22,7 +20,6 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.18.0",
     "@types/node": "20.4.2",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.14",
