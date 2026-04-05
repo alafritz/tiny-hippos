@@ -38,7 +38,7 @@ export function Home() {
             weight="regular"
             variant="secondary"
             scale
-            className="pt-2.5"
+            className="pt-2.5 text-center"
           >
             Co-ed Fútbol Team • East Bay (All Day), CA
           </Text>
