@@ -35,9 +35,9 @@ export function FormationSection() {
           </ContentGrid>
         </div>
         {/*pitch*/}
-        <div className="flex gap-[20px]">
+        <div className="flex gap-[20px] justify-center">
           <div className="hidden min-[601px]:block flex-1 bg-[#A5C9FB] rounded-[10px]" />
-          <div className="relative h-[560px] w-full max-w-[440px] rounded-lg overflow-hidden shrink-0">
+          <div className="relative aspect-[11/14] w-full max-w-[440px] rounded-lg overflow-hidden">
             <Image
               alt="soccer"
               src="/assets/soccerpitch.png"

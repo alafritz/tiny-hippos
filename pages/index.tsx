@@ -43,7 +43,7 @@ export function Home() {
             Co-ed Fútbol Team • East Bay (All Day), CA
           </Text>
 
-          <div className="pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
+          <div className="w-full pt-10 pb-20 space-y-10 lg:pb-40 lg:pt-20">
             <TeamInfoSection />
             <FormationSection />
             <JerseyDetailsSection />

@@ -17,8 +17,8 @@ export function JerseyDetailsSection() {
       <CardWrapper>
         <div className="flex flex-col lg:flex-row gap-y-5 gap-x-[20px]">
           {/* Jersey images */}
-          <div className="flex gap-[10px] min-h-[300px] lg:w-1/2">
-            <div className="relative w-[200px] shrink-0 overflow-hidden rounded-[10px]">
+          <div className="flex gap-[10px] min-h-[300px] lg:w-1/2 overflow-hidden rounded-[10px]">
+            <div className="relative w-[200px] shrink-0 rounded-[10px] overflow-hidden">
               <Image
                 src="/assets/a-jersey.png"
                 layout="fill"
@@ -26,7 +26,7 @@ export function JerseyDetailsSection() {
                 alt="a jersey"
               />
             </div>
-            <div className="relative w-[200px] shrink-0 overflow-hidden rounded-[10px]">
+            <div className="relative w-[200px] shrink-0 rounded-[10px] overflow-hidden">
               <Image
                 src="/assets/b-jersey.png"
                 layout="fill"
